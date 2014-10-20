@@ -2,5 +2,5 @@ UIButton *{name} = [UIButton buttonWithType:UIButtonTypeCustom];{~n}
 [{name} setTranslatesAutoresizingMaskIntoConstraints:NO];{~n}
 [{name} setTitleColor:[UIColor {@objCColor:baseTextStyle}{baseTextStyle.color}{/objCColor}] forState:UIControlStateNormal];{~n}
 [{name} setTitle:{@nsLocalizedString}{text}{/nsLocalizedString} forState:UIControlStateNormal];{~n}
-{name}.titleLabel.font = [UIFont fontWithName:@"[TextFont {@objCFont}{baseTextStyle.font}{/objCFont}]" size:{@math key="{baseTextStyle.font.size}" method="divide" operand="2" /}];{~n}
+{name}.titleLabel.font = [UIFont fontWithName:@"{@objCFont}{baseTextStyle.font}{/objCFont}" size:{baseTextStyle.font.size}];{~n}
 [{options.superviewName} addSubview:{name}];
